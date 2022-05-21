@@ -1,0 +1,251 @@
+title,vote_count,vote_average,popularity,genres
+Stiff Upper Lips,1,10.0,0.356495,['Comedy']
+Me You and Five Bucks,2,10.0,0.094105,"['Romance', 'Comedy', 'Drama']"
+"Dancer, Texas Pop. 81",1,10.0,0.376662,"['Comedy', 'Drama', 'Family']"
+Little Big Top,1,10.0,0.0921,['Comedy']
+Sardaarji,2,9.5,0.296981,[]
+One Man's Hero,2,9.3,0.910529,"['Western', 'Action', 'Drama', 'History']"
+There Goes My Baby,2,8.5,0.037073,"['Drama', 'Comedy']"
+The Shawshank Redemption,8205,8.5,136.747729,"['Drama', 'Crime']"
+The Prisoner of Zenda,11,8.4,4.021389,"['Adventure', 'Drama', 'Romance']"
+The Godfather,5893,8.4,143.659698,"['Drama', 'Crime']"
+Spirited Away,3840,8.3,118.968562,"['Fantasy', 'Adventure', 'Animation', 'Family']"
+Whiplash,4254,8.3,192.528841,['Drama']
+The Godfather: Part II,3338,8.3,105.792936,"['Drama', 'Crime']"
+Pulp Fiction,8428,8.3,121.463076,"['Thriller', 'Crime']"
+Fight Club,9413,8.3,146.757391,['Drama']
+Counting,3,8.3,0.293587,['Documentary']
+Schindler's List,4329,8.3,104.469351,"['Drama', 'History', 'War']"
+The Empire Strikes Back,5879,8.2,78.51783,"['Adventure', 'Action', 'Science Fiction']"
+The Dark Knight,12002,8.2,187.322927,"['Drama', 'Action', 'Crime', 'Thriller']"
+One Flew Over the Cuckoo's Nest,2919,8.2,127.525581,['Drama']
+The Visual Bible: The Gospel of John,12,8.2,3.208172,"['Drama', 'History']"
+Howl's Moving Castle,1991,8.2,49.549984,"['Fantasy', 'Animation', 'Adventure']"
+Once Upon a Time in America,1069,8.2,49.336397,"['Drama', 'Crime']"
+Anne of Green Gables,68,8.2,8.772574,"['Drama', 'Family']"
+GoodFellas,3128,8.2,63.654244,"['Drama', 'Crime']"
+Psycho,2320,8.2,93.067866,"['Drama', 'Horror', 'Thriller']"
+Forrest Gump,7927,8.2,138.133331,"['Comedy', 'Drama', 'Romance']"
+Seven Samurai,878,8.2,39.756748,"['Action', 'Drama']"
+The Green Mile,4048,8.2,103.698022,"['Fantasy', 'Drama', 'Crime']"
+American History X,3016,8.2,73.567232,['Drama']
+12 Angry Men,2078,8.2,59.259204,['Drama']
+Princess Mononoke,1983,8.2,60.732738,"['Adventure', 'Fantasy', 'Animation']"
+Once Upon a Time in the West,1128,8.1,49.333137,['Western']
+Dead Poets Society,2705,8.1,55.458584,['Drama']
+Inception,13752,8.1,167.58371,"['Action', 'Thriller', 'Science Fiction', 'Mystery', 'Adventure']"
+The Lord of the Rings: The Return of the King,8064,8.1,123.630332,"['Adventure', 'Fantasy', 'Action']"
+Interstellar,10867,8.1,724.247784,"['Adventure', 'Drama', 'Science Fiction']"
+Love Jones,12,8.1,1.000178,"['Comedy', 'Drama', 'Romance']"
+Modern Times,856,8.1,28.27648,"['Drama', 'Comedy']"
+City of God,1814,8.1,44.356711,"['Drama', 'Crime']"
+Memento,4028,8.1,60.715151,"['Mystery', 'Thriller']"
+The Shining,3757,8.1,78.699993,"['Horror', 'Thriller']"
+The Apartment,483,8.1,22.889294,"['Comedy', 'Drama', 'Romance']"
+"The Good, the Bad and the Ugly",2311,8.1,88.377076,['Western']
+The Usual Suspects,3254,8.1,64.025031,"['Drama', 'Crime', 'Thriller']"
+The Silence of the Lambs,4443,8.1,18.174804,"['Crime', 'Drama', 'Thriller']"
+Se7en,5765,8.1,79.579532,"['Crime', 'Mystery', 'Thriller']"
+Room,2757,8.1,66.11334,"['Drama', 'Thriller']"
+Star Wars,6624,8.1,126.393695,"['Adventure', 'Action', 'Science Fiction']"
+"Guten Tag, Ramón",18,8.1,1.771584,['Drama']
+Lake of Fire,10,8.0,0.475748,['Documentary']
+Tupac: Resurrection,26,8.0,1.314576,"['Music', 'Documentary']"
+Dr. Strangelove or: How I Learned to Stop Worrying and Love the Bomb,1442,8.0,41.996783,"['Drama', 'Comedy', 'War']"
+Reservoir Dogs,3697,8.0,66.925866,"['Crime', 'Thriller']"
+Taxi Driver,2535,8.0,58.845025,"['Crime', 'Drama']"
+Apocalypse Now,2055,8.0,49.973462,"['Drama', 'War']"
+The Imitation Game,5723,8.0,145.364591,"['History', 'Drama', 'Thriller', 'War']"
+Metropolis,657,8.0,32.351527,"['Drama', 'Science Fiction']"
+The Lion King,5376,8.0,90.457886,"['Family', 'Animation', 'Drama']"
+Some Like It Hot,808,8.0,39.30982,"['Comedy', 'Romance']"
+Scarface,2948,8.0,70.105981,"['Action', 'Crime', 'Drama', 'Thriller']"
+Iraq for Sale: The War Profiteers,6,8.0,1.517771,['Documentary']
+The Lord of the Rings: The Fellowship of the Ring,8705,8.0,138.049577,"['Adventure', 'Fantasy', 'Action']"
+Call + Response,1,8.0,0.062089,['Documentary']
+The Grand Budapest Hotel,4519,8.0,74.417456,"['Comedy', 'Drama']"
+The Pianist,1864,8.0,50.587541,"['Drama', 'War']"
+The Business of Fancydancing,2,8.0,0.06104,"['Music', 'Drama']"
+It's a Wonderful Life,1076,8.0,42.868495,"['Drama', 'Family', 'Fantasy']"
+Inside Out,6560,8.0,128.655964,"['Drama', 'Comedy', 'Animation', 'Family']"
+Samsara,167,8.0,12.781973,"['Drama', 'Documentary']"
+To Kill a Mockingbird,657,8.0,22.139842,"['Crime', 'Drama']"
+Dreaming of Joseph Lees,1,8.0,0.11615,"['Romance', 'Drama']"
+Déjà Vu,1,8.0,0.605645,"['Romance', 'Drama']"
+One Direction: This Is Us,201,8.0,7.944457,"['Documentary', 'Music']"
+Rise of the Entrepreneur: The Search for a Better Way,1,8.0,0.052942,[]
+The Lord of the Rings: The Two Towers,7487,8.0,106.914973,"['Adventure', 'Fantasy', 'Action']"
+Star Wars: Clone Wars: Volume 1,27,8.0,1.881466,"['Action', 'Adventure', 'Animation', 'Fantasy', 'Science Fiction']"
+The Prestige,4391,8.0,74.440708,"['Drama', 'Mystery', 'Thriller']"
+Dolphins and Whales: Tribes of the Ocean,3,8.0,0.041651,['Documentary']
+On the Waterfront,357,8.0,16.015599,"['Crime', 'Drama']"
+Oldboy,1945,8.0,56.76349,"['Drama', 'Thriller', 'Mystery', 'Action']"
+The Work and the Glory II: American Zion,6,8.0,2.639106,['Drama']
+The Jimmy Show,1,8.0,0.098351,"['Comedy', 'Drama']"
+Back to the Future,6079,8.0,76.603233,"['Adventure', 'Comedy', 'Science Fiction', 'Family']"
+Karachi se Lahore,1,8.0,0.060003,"['Family', 'Comedy']"
+2001: A Space Odyssey,2998,7.9,86.201184,"['Science Fiction', 'Mystery', 'Adventure']"
+The Elephant Man,719,7.9,30.271066,"['Drama', 'History']"
+The Wolf of Wall Street,6571,7.9,95.007934,"['Crime', 'Drama', 'Comedy']"
+Inglourious Basterds,6430,7.9,72.595961,"['Drama', 'Action', 'Thriller', 'War']"
+Prisoners,3085,7.9,88.496873,"['Drama', 'Thriller', 'Crime']"
+Requiem for a Dream,2443,7.9,11.573034,"['Crime', 'Drama']"
+Gladiator,5439,7.9,95.301296,"['Action', 'Drama', 'Adventure']"
+Her,4097,7.9,53.682367,"['Romance', 'Science Fiction', 'Drama']"
+Blade Runner,3509,7.9,94.056131,"['Science Fiction', 'Drama', 'Thriller']"
+Casablanca,1422,7.9,43.729123,"['Drama', 'Romance']"
+Return of the Jedi,4665,7.9,46.509071,"['Adventure', 'Action', 'Science Fiction']"
+The Last Waltz,64,7.9,3.277287,"['Documentary', 'Music']"
+Incendies,479,7.9,21.285206,"['Drama', 'War', 'Mystery']"
+"Batman: The Dark Knight Returns, Part 2",419,7.9,25.891466,"['Action', 'Animation']"
+Dallas Buyers Club,2886,7.9,59.454473,"['Drama', 'History']"
+Polisse,285,7.9,14.038703,['Drama']
+Gone Girl,5862,7.9,143.041543,"['Mystery', 'Thriller', 'Drama']"
+Das Boot,613,7.9,26.967494,"['Action', 'Drama', 'History', 'War', 'Adventure']"
+Alien,4470,7.9,94.184658,"['Horror', 'Action', 'Thriller', 'Science Fiction']"
+The Hunt,927,7.9,21.826888,['Drama']
+The Sting,622,7.9,28.500913,"['Comedy', 'Crime', 'Drama']"
+Eternal Sunshine of the Spotless Mind,3652,7.9,56.481487,"['Science Fiction', 'Drama', 'Romance']"
+Good Will Hunting,2811,7.9,43.734886,['Drama']
+There Will Be Blood,1537,7.9,37.817905,['Drama']
+The Lives of Others,958,7.9,34.938177,"['Drama', 'Thriller']"
+Saving Private Ryan,5048,7.9,76.041867,"['Drama', 'History', 'War']"
+12 Years a Slave,3674,7.9,95.9229,"['Drama', 'History']"
+Guardians of the Galaxy,9742,7.9,481.098624,"['Action', 'Science Fiction', 'Adventure']"
+The Departed,4339,7.9,63.429157,"['Drama', 'Thriller', 'Crime']"
+Mr. Smith Goes to Washington,241,7.9,12.2624,"['Comedy', 'Drama']"
+American Beauty,3313,7.9,80.878605,['Drama']
+The Matrix,8907,7.9,104.309993,"['Action', 'Science Fiction']"
+Trainspotting,2655,7.8,63.513324,"['Drama', 'Crime']"
+The Truman Show,4537,7.8,56.488027,"['Comedy', 'Drama']"
+About Time,2067,7.8,74.817641,"['Comedy', 'Drama', 'Science Fiction']"
+Spotlight,2686,7.8,41.503588,"['Drama', 'Thriller', 'History']"
+Casino,1307,7.8,40.06688,"['Drama', 'Crime']"
+The Deer Hunter,921,7.8,19.786392,"['Drama', 'War']"
+Beyond the Mat,17,7.8,2.778633,['Documentary']
+Cries and Whispers,115,7.8,11.347855,['Drama']
+The Help,1910,7.8,42.191509,['Drama']
+Amélie,3310,7.8,73.720244,"['Comedy', 'Romance']"
+Gran Torino,3086,7.8,50.7453,['Drama']
+The Secret in Their Eyes,626,7.8,25.894065,"['Crime', 'Drama', 'Mystery', 'Romance']"
+The Square,55,7.8,4.892203,"['Documentary', 'Drama', 'History']"
+Annie Hall,1010,7.8,35.892034,"['Comedy', 'Drama', 'Romance']"
+Shutter Island,6336,7.8,81.914696,"['Drama', 'Thriller', 'Mystery']"
+Live-In Maid,3,7.8,0.038706,"['Drama', 'Foreign']"
+Big Hero 6,6135,7.8,203.73459,"['Adventure', 'Family', 'Animation', 'Action', 'Comedy']"
+Singin' in the Rain,727,7.8,36.556954,"['Comedy', 'Music', 'Romance']"
+Raising Victor Vargas,13,7.8,3.643662,"['Drama', 'Romance']"
+The Theory of Everything,3311,7.8,61.182331,"['Drama', 'Romance']"
+Amadeus,1076,7.8,31.82675,"['Drama', 'History', 'Music']"
+Elite Squad,504,7.8,23.604936,"['Drama', 'Action', 'Crime']"
+The Big Lebowski,2926,7.8,49.230089,"['Comedy', 'Crime']"
+The Thing,1588,7.8,52.731379,"['Horror', 'Mystery', 'Science Fiction']"
+WALL·E,6296,7.8,66.390712,"['Animation', 'Family']"
+Children of Heaven,112,7.8,7.072118,"['Drama', 'Comedy', 'Family']"
+Stand by Me,1522,7.8,51.109279,"['Crime', 'Drama']"
+Ordet,65,7.8,3.225189,['Drama']
+The Second Mother,165,7.8,9.683622,['Drama']
+Into the Wild,3045,7.8,43.644978,"['Adventure', 'Drama']"
+Monty Python and the Holy Grail,1708,7.8,64.782984,"['Adventure', 'Comedy', 'Fantasy']"
+Django Unchained,10099,7.8,82.121691,"['Drama', 'Western']"
+Lawrence of Arabia,851,7.8,41.286336,"['Adventure', 'Drama', 'History', 'War']"
+Waltz with Bashir,291,7.8,14.08251,"['Drama', 'Animation', 'War']"
+The Great Escape,717,7.8,35.061467,"['Adventure', 'Drama', 'History', 'Thriller', 'War']"
+Akira,773,7.8,39.338097,"['Science Fiction', 'Animation']"
+Downfall,1037,7.7,32.445895,"['Drama', 'History', 'War']"
+The Notebook,3067,7.7,55.109138,"['Romance', 'Drama']"
+Warrior,1272,7.7,51.915025,"['Action', 'Drama']"
+The Color Purple,338,7.7,17.571533,['Drama']
+Kill Bill: Vol. 1,4949,7.7,79.754966,"['Action', 'Crime']"
+Dream with the Fishes,10,7.7,0.948316,['Comedy']
+Lilya 4-ever,139,7.7,7.759215,"['Crime', 'Drama']"
+Barry Lyndon,505,7.7,29.543331,"['Drama', 'Romance', 'War']"
+Harry Potter and the Prisoner of Azkaban,5877,7.7,79.679601,"['Adventure', 'Fantasy', 'Family']"
+Solaris,357,7.7,24.132271,"['Drama', 'Science Fiction', 'Adventure', 'Mystery']"
+Catch Me If You Can,3795,7.7,73.944049,"['Drama', 'Crime']"
+No Country for Old Men,3003,7.7,53.645267,"['Crime', 'Drama', 'Thriller']"
+V for Vendetta,4442,7.7,84.630969,"['Action', 'Thriller', 'Fantasy']"
+Young Frankenstein,854,7.7,36.444894,"['Comedy', 'Science Fiction']"
+The Sixth Sense,3147,7.7,73.085576,"['Mystery', 'Thriller', 'Drama']"
+Braveheart,3336,7.7,60.722162,"['Action', 'Drama', 'History', 'War']"
+Raiders of the Lost Ark,3854,7.7,68.159596,"['Adventure', 'Action']"
+Up,6870,7.7,92.201962,"['Animation', 'Comedy', 'Family', 'Adventure']"
+Snatch,2912,7.7,53.595686,"['Thriller', 'Crime']"
+Rush,2277,7.7,33.003828,"['Drama', 'Action']"
+The Celebration,207,7.7,10.240917,['Drama']
+Million Dollar Baby,2439,7.7,70.456012,['Drama']
+Rebecca,336,7.7,18.426825,"['Drama', 'Mystery']"
+A Separation,469,7.7,12.049373,['Drama']
+It Happened One Night,275,7.7,11.871424,"['Comedy', 'Romance']"
+Before Sunrise,959,7.7,23.672571,"['Drama', 'Romance']"
+The Bridge on the River Kwai,542,7.7,23.109959,"['Drama', 'History', 'War']"
+Donnie Darko,3452,7.7,61.210016,"['Fantasy', 'Drama', 'Mystery']"
+Character,25,7.7,0.011697,"['Drama', 'Foreign', 'History']"
+Terminator 2: Judgment Day,4185,7.7,101.74155,"['Action', 'Thriller', 'Science Fiction']"
+Toy Story,5269,7.7,73.640445,"['Animation', 'Comedy', 'Family']"
+Hoop Dreams,87,7.7,9.188431,['Documentary']
+Bound by Honor,115,7.7,9.122828,"['Action', 'Crime', 'Drama', 'Thriller']"
+A Beautiful Mind,3009,7.7,59.248437,"['Drama', 'Romance']"
+The Case of the Grinning Cat,3,7.7,0.092562,['Documentary']
+Network,381,7.7,17.234745,['Drama']
+Along the Roadside,3,7.7,0.166655,"['Romance', 'Comedy', 'Music']"
+Unforgiven,1113,7.7,37.380435,['Western']
+The Perks of Being a Wallflower,2968,7.7,43.444135,"['Drama', 'Romance']"
+The Heart of Me,5,7.7,1.498245,"['Drama', 'Romance']"
+The Man from Earth,687,7.7,31.339015,"['Science Fiction', 'Drama']"
+Aliens,3220,7.7,67.66094,"['Horror', 'Action', 'Thriller', 'Science Fiction']"
+Hachi: A Dog's Tale,1717,7.7,43.217089,"['Drama', 'Family']"
+Straight Outta Compton,1355,7.7,61.76233,"['Drama', 'Music']"
+My Name Is Khan,232,7.7,14.719886,"['Drama', 'Romance']"
+Inside Job,286,7.7,16.930914,['Documentary']
+L.A. Confidential,1310,7.7,24.860326,"['Crime', 'Drama', 'Mystery', 'Thriller']"
+Persepolis,450,7.7,24.281951,"['Animation', 'Drama']"
+Gone with the Wind,970,7.7,48.98255,"['Drama', 'Romance', 'War']"
+The Best Offer,704,7.7,30.058263,"['Drama', 'Romance', 'Crime', 'Mystery']"
+The Boy in the Striped Pyjamas,1451,7.7,34.821223,"['War', 'Drama']"
+The Pursuit of Happyness,2525,7.7,80.581367,['Drama']
+Pride & Prejudice,1358,7.7,36.58383,"['Drama', 'Romance']"
+Kevin Hart: Laugh at My Pain,43,7.7,5.498834,"['Comedy', 'Documentary']"
+The Straight Story,306,7.7,15.280261,['Drama']
+Raging Bull,938,7.7,35.524457,['Drama']
+Lage Raho Munna Bhai,44,7.6,2.436019,"['Comedy', 'Drama', 'Romance']"
+Judgment at Nuremberg,155,7.6,13.338539,"['Drama', 'History']"
+The Iron Giant,1436,7.6,61.245957,"['Adventure', 'Animation', 'Family', 'Fantasy', 'Science Fiction']"
+Slumdog Millionaire,2827,7.6,59.258969,"['Drama', 'Romance']"
+Mulan,2008,7.6,67.427755,"['Animation', 'Family', 'Adventure']"
+City of Life and Death,55,7.6,4.793348,"['Drama', 'History', 'War']"
+The Little Prince,756,7.6,35.384423,"['Adventure', 'Animation', 'Fantasy']"
+Hidden Away,26,7.6,1.233688,"['Romance', 'Drama']"
+Days of Heaven,234,7.6,13.857194,"['Drama', 'Romance']"
+Finding Nemo,6122,7.6,85.688789,"['Animation', 'Family']"
+Pandora's Box,45,7.6,1.824184,"['Drama', 'Thriller', 'Romance']"
+The Bubble,20,7.6,1.49436,"['Drama', 'Romance']"
+Me Before You,2562,7.6,53.161905,"['Drama', 'Romance']"
+Central Station,126,7.6,5.928937,['Drama']
+The Conformist,127,7.6,8.429295,['Drama']
+High Noon,334,7.6,18.644023,['Western']
+The Martian,7268,7.6,167.93287,"['Drama', 'Adventure', 'Science Fiction']"
+Mulholland Drive,1477,7.6,31.60985,"['Thriller', 'Drama', 'Mystery']"
+The Fault in Our Stars,3759,7.6,74.358971,"['Romance', 'Drama']"
+The King's Speech,2752,7.6,54.053576,"['Drama', 'History']"
+Moon,1794,7.6,46.114184,"['Science Fiction', 'Drama']"
+Mystic River,1422,7.6,31.242999,"['Thriller', 'Crime', 'Drama', 'Mystery']"
+Evil Dead II,742,7.6,35.674774,"['Horror', 'Comedy', 'Fantasy']"
+Rain Man,1709,7.6,49.510658,['Drama']
+Jurassic Park,4856,7.6,40.413191,"['Adventure', 'Science Fiction']"
+Moonrise Kingdom,1662,7.6,41.083914,"['Comedy', 'Drama', 'Romance']"
+Captain Phillips,2454,7.6,52.786917,"['Action', 'Drama', 'Thriller']"
+Do the Right Thing,292,7.6,15.580335,['Drama']
+Cat on a Hot Tin Roof,165,7.6,16.553594,"['Drama', 'Romance']"
+Big Fish,1994,7.6,46.199482,"['Adventure', 'Fantasy', 'Drama']"
+A Fistful of Dollars,883,7.6,38.771062,['Western']
+Pan's Labyrinth,3041,7.6,90.809408,"['Fantasy', 'Drama', 'War']"
+Emma,38,7.6,2.135689,"['Romance', 'Comedy', 'Drama']"
+Riding Giants,23,7.6,0.895946,['Documentary']
+"Girl, Interrupted",721,7.6,10.713521,['Drama']
+Dancer in the Dark,377,7.6,22.022228,"['Drama', 'Crime', 'Music']"
+Captain America: The Winter Soldier,5764,7.6,72.225265,"['Action', 'Adventure', 'Science Fiction']"
+The Hateful Eight,4274,7.6,68.717016,"['Crime', 'Drama', 'Mystery', 'Western']"
+In the Shadow of the Moon,31,7.6,3.43159,['Documentary']
+The Wild Bunch,259,7.6,14.970654,"['Adventure', 'Western']"
+Edge of Tomorrow,4858,7.6,79.456485,"['Action', 'Science Fiction']"
