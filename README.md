@@ -56,9 +56,10 @@ All pre-processing to obtain final TMDB2.csv file done in the colab files(.pynb)
 <br>
 
 -->After calculating similarity the `recmnd()` function sorts the movies in order from highest similarity to lowest using python's sort function.<br> Python's sort function uses `Tim sort` which is a mix of merge and insertion sort.<br>
-<r>
+<br>
 --> Fetch details of recommended movies (according to the sorted similarity list) and display in the correct order
 
+![image](https://user-images.githubusercontent.com/70155541/169870803-5d23a76e-a626-4b97-8b50-897835243256.png)
 
 ###  TOP10 (Top10.html) <br>
 --> List of top 10 movies of all genres sorted according to decreasing popularity. Click on any of the listed movies, you'll get the details of the movie as well as recommendations. File uses the `rec.js` file
@@ -79,6 +80,5 @@ Listed according to the output csv files obtained from the colab files eg) Crime
 
 ![image](https://user-images.githubusercontent.com/70155541/169868626-a29b84bc-1637-4d2f-a465-b991c1eb0494.png)
 ![image](https://user-images.githubusercontent.com/70155541/169868700-bfa948c4-bf7e-40d3-ab3c-fac0c1c73cb3.png)
-![image](https://user-images.githubusercontent.com/70155541/169868756-87f8079e-6bb5-4505-928f-bf4b900cdc5f.png)
-
+![image](https://user-images.githubusercontent.com/70155541/169870884-80ca6a89-c5e6-482b-b745-21e066e821ef.png)
 
