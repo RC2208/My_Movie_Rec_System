@@ -22,6 +22,8 @@ Replace your API key on:<br>
 https://www.cssscript.com/fast-autocomplete-typeahead/
 <br>
 2. **Sort:**  Python's Tim sort <br>
+<br>
+
 ![image](https://user-images.githubusercontent.com/70155541/169867952-1490cc3e-17be-4c6f-98f5-be87d91a9141.png)
 
 
