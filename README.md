@@ -2,25 +2,26 @@ Microsoft Mentee project on Algorithms:
 # Movie Recommendation System
 
 ### Steps:<br>
-Download all files<br>
-Download and install all requirements in requirement.txt<br>
-run python test1.py in terminal<br>
-click link on terminal or copy link and open ip on browser.
+-Download all files<br>
+-Download and install all requirements in requirement.txt<br>
+-run python test1.py in terminal<br>
+-click link on terminal or copy link and open ip on browser.
 
 # To Get API KEY
-Create an account in https://www.themoviedb.org/, click on the API link in your account settings and fill all  details to apply for API key. Fill website URL as "NA" if you don't have one. You will see the API key to copy once your request is approved.
+Create an account in https://www.themoviedb.org/, click on the API link in your account settings and fill all  details to apply for API key. Fill website URL as "NA" if you don't have one. You will see the API key to copy once your request is approved. <br>
 
-in file `static/recommned.js` and `static/rec.js` replce my_api_key value with your own API key.
+In file `static/recommned.js` and `static/rec.js` replce my_api_key value with your own API key.
 <br>
 Replace your API key on:<br>
-`static/recommned.js` line 15 and 31<br>
-`static/rec.js` line 4 and 20<br>
+1. `static/recommned.js` line 15 and 31<br>
+2. `static/rec.js` line 4 and 20<br>
 
 ## Search Engine and type of Sort used:<br>
-**Search engine:** Fast Autocomplete & Typeahead Library – autoComplete.js <br>
+<br>
+1. **Search engine:** Fast Autocomplete & Typeahead Library – autoComplete.js 
 https://www.cssscript.com/fast-autocomplete-typeahead/
 <br>
-**Sort:**  Python's Tim sort <br>
+2. **Sort:**  Python's Tim sort <br>
 ![image](https://user-images.githubusercontent.com/70155541/169867952-1490cc3e-17be-4c6f-98f5-be87d91a9141.png)
 
 
@@ -43,15 +44,17 @@ All pre-processing to obtain final TMDB2.csv file done in the colab files(.pynb)
 <br>
 (in case you get an error in recommendation alert refresh or hard refresh (ctrl + F5) the browser aftr clicking ok)
 <br>
+<br>
 ![image](https://user-images.githubusercontent.com/70155541/169867567-f21a2d2d-3a46-4ea9-8833-e267157b75af.png)
 
 ![image](https://user-images.githubusercontent.com/70155541/169867632-883d948c-ebd2-46f7-b6de-6ef1e47db868.png)
 
 <br>
 --> At the same time in the python file you reach the /similarity routing.This calls functions to calculates cosine similarity of the movie by making count vectors of the `tags` column in the TMDV2.csv file. The `tag` cloumn is a mix of the movie genres, directors, actors and plot. <br>
+<br>
 
--->After calculating similarity the `recmnd()` function sorts the movies in order from highest similarity to lowest using python's sort function.<br> Python's sort function uses `Tim sort` which is a mix of `merge and insertion sort`.<br>
-
+-->After calculating similarity the `recmnd()` function sorts the movies in order from highest similarity to lowest using python's sort function.<br> Python's sort function uses `Tim sort` which is a mix of merge and insertion sort.<br>
+<r>
 --> Fetch details of recommended movies (according to the sorted similarity list) and display in the correct order
 
 
