@@ -10,13 +10,14 @@ click link on terminal or copy link and open ip on browser.
 # To Get API KEY
 Create an account in https://www.themoviedb.org/, click on the API link in your account settings and fill all  details to apply for API key. Fill website URL as "NA" if you don't have one. You will see the API key to copy once your request is approved.
 
-in file `static/recommned.js` and `static/rec.js` replce my_api_key value with your own API key on line 
-Replace your API key on:
-`static/recommned.js` line 15 and 31
-`static/rec.js` line 4 and 20
+in file `static/recommned.js` and `static/rec.js` replce my_api_key value with your own API key.
+<br>
+Replace your API key on:<br>
+`static/recommned.js` line 15 and 31<br>
+`static/rec.js` line 4 and 20<br>
 
 ## Search Engine and type of Sort used:<br>
-**Search engine:** Fast Autocomplete & Typeahead Library – autoComplete.js
+**Search engine:** Fast Autocomplete & Typeahead Library – autoComplete.js <br>
 https://www.cssscript.com/fast-autocomplete-typeahead/
 <br>
 **Sort:**  Python's Tim sort <br>
