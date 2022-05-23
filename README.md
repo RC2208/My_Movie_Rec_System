@@ -23,7 +23,8 @@ https://www.cssscript.com/fast-autocomplete-typeahead/
 
 
 <br>
-*Sort:* Python's Tim sort <br>
+
+*Sort:*  Python's Tim sort <br>
 
 ## Pre-processing using Machine Learning <br>
 All pre-processing to obtain final TMDB2.csv file done in the colab files(.pynb)
@@ -35,14 +36,20 @@ All pre-processing to obtain final TMDB2.csv file done in the colab files(.pynb)
 ![image](https://user-images.githubusercontent.com/70155541/169860918-686f9837-7f28-4e19-88db-13a3ce67261f.png)
 
 --> Here you may enter name of any movie (`autocomplete.js` and `get_mvsuggest` function in test1.py file suggests the full movie names. Thus as soon as you start typing some matching movie names will come up) and if its's present in the database, once you click the search button , the `recommend.js` file has a function that fetched the movie title as soon as you click the search button. <br>
+
 --> It then calls several other functions that fetch the details of the movie from the TMDB site using your API keys like genre, plot, casts, cast details, poster etc.
+<br>
 (in case you get an error in recommendation alert refresh or hard refresh (ctrl + F5) the browser aftr clicking ok)
+<br>
 ![image](https://user-images.githubusercontent.com/70155541/169867567-f21a2d2d-3a46-4ea9-8833-e267157b75af.png)
 
 ![image](https://user-images.githubusercontent.com/70155541/169867632-883d948c-ebd2-46f7-b6de-6ef1e47db868.png)
 
+<br>
 --> At the same time in the python file you reach the /similarity routing.This calls functions to calculates cosine similarity of the movie by making count vectors of the `tags` column in the TMDV2.csv file. The `tag` cloumn is a mix of the movie genres, directors, actors and plot. <br>
+
 -->After calculating similarity the `recmnd()` function sorts the movies in order from highest similarity to lowest using python's sort function.<br> Python's sort function uses `Tim sort` which is a mix of `merge and insertion sort`.<br>
+
 --> Fetch details of recommended movies (according to the sorted similarity list) and display in the correct order
 
 
@@ -50,12 +57,14 @@ All pre-processing to obtain final TMDB2.csv file done in the colab files(.pynb)
 --> List of top 10 movies of all genres sorted according to decreasing popularity. Click on any of the listed movies, you'll get the details of the movie as well as recommendations. File uses the `rec.js` file
 
 ![image](https://user-images.githubusercontent.com/70155541/169868160-215cb660-15e6-4caa-a20d-d997af3edf5d.png)
+<br>
 
 
 ###  TOPRATED (Toprated.html) <br>
 --> List of top 10 most rated movies of all genres sorted according to decreasing ratings. Click on any of the listed movies, you'll get the details of the movie as well as recommendations. File uses the `rec.js` file for recommendation
 
 ![image](https://user-images.githubusercontent.com/70155541/169868578-0412e0a9-21bc-49e3-8394-11982d56bb8d.png)
+<br>
 
 ###  POPULAR (popular.html) <br>
 --> List of most popular movies sorted according to genre. Click on any of the listed movies, you'll get the details of the movie as well as recommendations. File uses the `rec.js` file for recommendation<br>
