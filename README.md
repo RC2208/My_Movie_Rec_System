@@ -16,15 +16,16 @@ Replace your API key on:
 `static/rec.js` line 4 and 20
 
 ## Search Engine and type of Sort used:<br>
-*Search engine:* Fast Autocomplete & Typeahead Library – autoComplete.js
+**Search engine:** Fast Autocomplete & Typeahead Library – autoComplete.js
 https://www.cssscript.com/fast-autocomplete-typeahead/
-
+<br>
+**Sort:**  Python's Tim sort <br>
 ![image](https://user-images.githubusercontent.com/70155541/169867952-1490cc3e-17be-4c6f-98f5-be87d91a9141.png)
 
 
 <br>
 
-*Sort:*  Python's Tim sort <br>
+
 
 ## Pre-processing using Machine Learning <br>
 All pre-processing to obtain final TMDB2.csv file done in the colab files(.pynb)
