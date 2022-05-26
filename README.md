@@ -13,18 +13,23 @@
 
 ## Deployment
 
-To deploy this project run
+To deploy this project in browser, run
 
 ```bash
   pip install -r requirements.txt
-  run python test1.py
+  python test1.py
 ```
 ## Tech Stack
 
-**Backend:** Flask, Python, JS
+- **Backend:** Flask, Python, JS
 
-**Frontend:** HTML, CSS, Bootstrap 
+- **Frontend:** HTML, CSS, Bootstrap 
 
+## Points to Note
+- Requires a strong and stable internet connection
+- It might show an alert: Error in recommendation (after clicking the search button) when you run the project for the 1st time (after you run python test1.py). You just need to hard refresh it (ctl + F5) and it will work smoothly.
+- The kaggle dataset only has movies till the year 2017 thus as long as you enter a mobie name that released before 2017 you will get all details and recommendations since my recommendation algorithm uses the movies in the dataset (after I have done pre-processing) to calculate similarity
+- I have created the recommendation system based on content based filtering.
 
 ## To Get API KEY
 Create an account in https://www.themoviedb.org/, click on the API link in your account settings and fill all  details to apply for API key. Fill website URL as "NA" if you don't have one. You will see the API key to copy once your request is approved. <br>
