@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Movie Recommendation System</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+
+  <!-- Auto Complete -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tarekraafat/autocomplete.js@7.2.0/dist/css/autoComplete.min.css">
+  <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='style.css') }}">
+  <script type="text/javascript">
+
+  </script>
+<style>
+  .nav-item{
+  text-transform: uppercase;
+    font-size:small;
+    letter-spacing:2px;
+    margin-left: 20px;
+}
+.navbar-brand{
+  text-transform: uppercase;
+    font-size:large;
+    letter-spacing:3px;
+
+}
+#one{
+  margin-left: 30px;
+}
+
+  .btn-block{
+    text-transform: uppercase;
+    font-size: larger;
+    letter-spacing:14px;
+    background-color: #fd0a0a;
+  }
+
+  #clc{
+    text-transform: uppercase;
+    font-size:medium;
+    letter-spacing:4px;
+    text-align: center;
+    color: whitesmoke;
+
+  }
+  .btn1{
+    text-transform: uppercase;
+    font-size: larger;
+    letter-spacing:14px;
+    background-color: #f6025b;
+
+  }
+  .btn2{
+    text-transform: uppercase;
+    font-size: larger;
+    letter-spacing:14px;
+    background-color: #00a800;
+
+  }
+
+  .top1,h2{
+    text-transform: uppercase;
+    font-size:x-large;
+    letter-spacing:7px;
+    text-align: center;
+    color: aquamarine;
+
+  }
+
+
+    /*movie poster*/
+.flex-container {
+  display: flex;
+}
+
+.flex-container  {
+  margin: 10px;
+  padding: 10px;
+}
+</style>
+</head>
+
+<body id="content" style="font-family:'Times New Roman', Times, serif;">
+<!--Github corner start-->
+
+<nav  style="background-color:#07093c;" class="navbar navbar-expand-lg navbar-dark">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="/">Home</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a id='one' class="nav-link active" aria-current="page" href="/top10">Top 10</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="/toprate">Top Rated</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="/pop">Popular</a>
+        </li>
+
+    </div>
+  </div>
+</nav>
+
+	<div class="ml-container" style="display: block;">
+		<a href="https://github.com/RC2208/My_Movie_Rec_System" target="_blank" class="github-corner" title="View source on GitHub">
+		      <svg data-toggle="tooltip"
+		      data-placement="left" width="80" height="80" viewBox="0 0 250 250"
+			style="fill:#3509e5; color:#fff; position: fixed;z-index:100; top: 0; border: 0; right: 0;" aria-hidden="true">
+
+			<path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path>
+			<path
+			  d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2"
+			  fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path>
+			<path
+			  d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 180.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z"
+			  fill="currentColor" class="octo-body"></path>
+		      </svg>
+		    </a>
+        </div>
+        
+        <!--Github corner end-->
+   
+              
+        <!--hereeeeeeeee-->
+
+        <h1 style = "text-align: center;"> MY MOVIE RECOMMENDATIONS PROJ</h1><br><br>
+
+
+        <div id="loader" class="text-center">
+        </div>
+        
+        <div class="fail">
+          <h3 style = "text-align: center;" >Sorry! The movie you requested is not in our database. Please try with some other movies. Note the TMDB website might have some send incorrect titles sometimes.</h3>
+        </div>
+        
+        <div class="results">
+          <center>
+            <h2 id="name" class="text-uppercase"></h2>
+          </center>
+        </div>
+
+<div id="list">
+<h2 class="top1"> List of Popular Movies</h2><br>
+  
+<h5 id="clc">Click the Movies to view details and reccomendations </h3><br><br>
+
+
+    <h2>Crime</h2>
+    <br><br>
+
+    <div class="flex-container">  
+
+      <div class="card" style=" margin-left: 150px; width: 18rem;">
+        <img class="card-img-top" src="../static/posters/darkknight.jpg" alt="The Dark Knight">
+        <div class="card-body">
+          <h5 class="card-title">The Dark Knight</h5>
+          <p style="color: red;" class="card-text"> Drama, Action, Crime, Thriller</p>
+          <button onclick= "click2(this.value)" value="The Dark Knight" class=" btn btn-primary">View Details</button>
+        </div>
+      </div>
+  
+      <div class="card" style=" margin-left: 150px; width: 18rem;">
+        <img class="card-img-top" src="../static/posters/godfather.jpg" alt="The Godfather">
+        <div class="card-body">
+          <h5 class="card-title">The Godfather</h5>
+          <p style="color: red;" class="card-text">  Action, Adventure, Science Fiction</p>
+          <button onclick= "click2(this.value)" value="The Godfather" class=" btn btn-primary">View Details</button>
+        </div>
+      </div>
+  
+      <div class="card" style=" margin-left: 150px; width: 18rem;">
+        <img class="card-img-top" src="../static/posters/Shawshank.jpg" alt="The Shawshank Redemption">
+        <div class="card-body">
+          <h5 class="card-title">The Shawshank Redemption</h5>
+          <p style="color: red;" class="card-text"> Drama, Crime</p>
+          <button onclick= "click2(this.value)" value="The Shawshank Redemption" class=" btn btn-primary">View Details</button>
+        </div>
+      </div>
+  
+    </div>
+  
+    <div  class="flex-container">  
+      <div class="card" style=" margin-left: 150px; width: 18rem;">
+        <img class="card-img-top" src="../static/posters/pulp.jpg" alt="Pulp Fiction">
+        <div class="card-body">
+          <h5 class="card-title">Pulp Fiction</h5>
+          <p style="color: red;" class="card-text"> Thriller, Crime</p>
+          <button onclick= "click2(this.value)" value="Pulp Fiction" class=" btn btn-primary">View Details</button>
+        </div>
+      </div>
+  
+      <div class="card" style=" margin-left: 150px; width: 18rem;">
+        <img class="card-img-top" src="../static/posters/chappie.jpg" alt="Chappie">
+        <div class="card-body">
+          <h5 class="card-title">Chappie</h5>
+          <p style="color: red;" class="card-text">  Crime, Action, Science Fiction</p>
+          <button onclick= "click2(this.value)" value="Chappie" class=" btn btn-primary">View Details</button>
+        </div>
+      </div>
+  
+      <div class="card" style=" margin-left: 150px; width: 18rem;">
+        <img class="card-img-top" src="../static/posters/batman.jpg" alt="Batman Begins">
+        <div class="card-body">
+          <h5 class="card-title">Batman Begins</h5>
+          <p style="color: red;" class="card-text"> Action, Crime, Drama</p>
+          <button onclick= "click2(this.value)" value="Batman Begins" class=" btn btn-primary">View Details</button>
+        </div>
+      </div>
+  
+      
+    </div>
+  
+
+<br><br>
+  <h2>Romance</h2>
+<br><br>
+
+  <div  class="flex-container">  
+    <div class="card" style=" margin-left: 150px; width: 18rem;">
+      <img class="card-img-top" src="../static/posters/forrest.jpg" alt="Forrest Gump">
+      <div class="card-body">
+        <h5 class="card-title">Forrest Gump</h5>
+        <p style="color: rgb(251, 8, 97);" class="card-text">  Comedy, Drama, Romance</p>
+        <button onclick= "click2(this.value)" value="Forrest Gump" class=" btn btn-primary">View Details</button>
+      </div>
+    </div>
+
+    <div class="card" style=" margin-left: 150px; width: 18rem;">
+      <img class="card-img-top" src="../static/posters/twilight.jpg" alt="Twilight">
+      <div class="card-body">
+        <h5 class="card-title">Twilight</h5>
+        <p style="color: rgb(251, 8, 97);" class="card-text"> Fantasy, Drama, Romance</p>
+        <button onclick= "click2(this.value)" value="Twilight" class=" btn btn-primary">View Details</button>
+      </div>
+    </div>
+
+    <div class="card" style=" margin-left: 150px; width: 18rem;">
+      <img class="card-img-top" src="../static/posters/maleficient.jpg" alt="Maleficent">
+      <div class="card-body">
+        <h5 class="card-title">Maleficent</h5>
+        <p style="color: rgb(251, 8, 97);" class="card-text">Fantasy, Adventure, Action, Family, Romance</p>
+        <button onclick= "click2(this.value)" value="Maleficent" class=" btn btn-primary">View Details</button>
+      </div>
+    </div>
+
+    
+  </div>
+
+
+
+<br><br>
+  <h2>Science Fiction</h2>
+<br>
+
+  <div  class="flex-container">  
+    <div class="card" style=" margin-left: 150px; width: 18rem;">
+      <img class="card-img-top" src="../static/posters/Interstellar.jpg" alt="Interstellar">
+      <div class="card-body">
+        <h5 class="card-title">Interstellar</h5>
+        <p style="color: rgb(128, 58, 199);" class="card-text">Adventure, Drama, Science Fiction</p>
+        <button onclick= "click2(this.value)" value="Interstellar" class=" btn btn-primary">View Details</button>
+      </div>
+    </div>
+
+    <div class="card" style=" margin-left: 150px; width: 18rem;">
+      <img class="card-img-top" src="../static/posters/madmax.jpg" alt="Mad Max: Fury Road">
+      <div class="card-body">
+        <h5 class="card-title">Mad Max: Fury Road</h5>
+        <p style="color: rgb(128, 58, 199);" class="card-text"> Action, Adventure, Science Fiction</p>
+        <button onclick= "click2(this.value)" value="Mad Max: Fury Road" class=" btn btn-primary">View Details</button>
+      </div>
+    </div>
+
+
+    <div class="card" style=" margin-left: 150px; width: 18rem;">
+      <img class="card-img-top" src="../static/posters/Dawn_ofthePlanetoftheApes.jpg" alt="Dawn of the Planet of the Apes">
+      <div class="card-body">
+        <h5 class="card-title">Dawn of the Planet of the Apes</h5>
+        <p style="color: rgb(128, 58, 199);" class="card-text"> Science Fiction, Action, Drama, Thriller</p>
+        <button onclick= "click2(this.value)" value="Dawn of the Planet of the Apes" class=" btn btn-primary">View Details</button>
+      </div>
+    </div>
+
+    
+  </div>
+
+
+  <br><br>
+  <h2>Comedy</h2>
+<br>
+  <div  class="flex-container">  
+
+    <div class="card" style=" margin-left: 150px; width: 18rem;">
+      <img class="card-img-top" src="../static/posters/minions.jpg" alt="Minions">
+      <div class="card-body">
+        <h5 class="card-title">Minions</h5>
+        <p style="color: rgb(205, 81, 10);" class="card-text"> Family, Animation, Adventure, Comedy</p>
+        <button onclick= "click2(this.value)" value="Minions" class=" btn btn-primary">View Details</button>
+      </div>
+    </div>
+
+    <div class="card" style=" margin-left: 150px; width: 18rem;">
+      <img class="card-img-top" src="../static/posters/Deadpool.jpg" alt="Deadpool">
+      <div class="card-body">
+        <h5 class="card-title">Deadpool</h5>
+        <p style="color:  rgb(205, 81, 10);" class="card-text"> Action, Adventure, Comedy </p>
+        <button onclick= "click2(this.value)" value="Deadpool" class=" btn btn-primary">View Details</button>
+      </div>
+    </div>
+
+
+    <div class="card" style=" margin-left: 150px; width: 18rem;">
+      <img class="card-img-top" src="../static/posters/bighero.jpg" alt="Big Hero 6">
+      <div class="card-body">
+        <h5 class="card-title">Big Hero 6</h5>
+        <p style="color: rgb(205, 81, 10);" class="card-text"> Adventure, Family, Animation, Action, Comedy</p>
+        <button onclick= "click2(this.value)" value="Big Hero 6" class=" btn btn-primary">View Details</button>
+      </div>
+    </div>
+
+    
+  </div>
+
+  <br><br>
+  <h2>Mystery</h2>
+<br>
+
+  <div  class="flex-container">  
+
+    <div class="card" style=" margin-left: 150px; width: 18rem;">
+      <img class="card-img-top" src="../static/posters/Inception.jpg" alt="Inception">
+      <div class="card-body">
+        <h5 class="card-title">Inception</h5>
+        <p style="color: red;" class="card-text"> Action, Science Fiction, Adventure, Mystery</p>
+        <button onclick= "click2(this.value)" value="Inception" class=" btn btn-primary">View Details</button>
+      </div>
+    </div>
+
+    <div class="card" style=" margin-left: 150px; width: 18rem;">
+      <img class="card-img-top" src="../static/posters/gonegirl.jpg" alt="Gone Girl">
+      <div class="card-body">
+        <h5 class="card-title">Gone Girl</h5>
+        <p style="color: red;" class="card-text"> Mystery, Thriller, Drama </p>
+        <button onclick= "click2(this.value)" value="Gone Girl" class=" btn btn-primary">View Details</button>
+      </div>
+    </div>
+
+
+    <div class="card" style=" margin-left: 150px; width: 18rem;">
+      <img class="card-img-top" src="../static/posters/mazerunner.jpg" alt="The Maze Runner">
+      <div class="card-body">
+        <h5 class="card-title">The Maze Runner</h5>
+        <p style="color: red;" class="card-text"> Action, Mystery, Science Fiction, Thriller</p>
+        <button onclick= "click2(this.value)" value="The Maze Runner" class=" btn btn-primary">View Details</button>
+      </div>
+    </div>
+
+    
+  </div>
+
+
+</div>
+
+<br><br><br>
+<p class="top1" style="font-size:x-small;" > Note: Movie ratings fetched from site may differ from that in our dataset.
+  <br> Movies here are sorted according to popularity values in dataset. </p>
+
+
+	<div class="footer"> 
+    made By Ritika @2022</div>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script type="text/javascript" src="{{url_for('static', filename='rec.js')}}"></script>
+
+</body>
+</html>
