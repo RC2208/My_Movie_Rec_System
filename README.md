@@ -40,7 +40,7 @@ In file `static/recommned.js` and `static/rec.js` replce my_api_key value with y
 <br>
 Replace your API key on:<br>
 1. `static/recommned.js` line 15 and 31<br>
-2. `static/rec.js` line 4 and 20<br>
+2. `static/rec.js` line 4 and 21<br>
 
 | Parameter | Type     | Description                |
 | :-------- | :------- | :------------------------- |
