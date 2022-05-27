@@ -29,7 +29,8 @@ To deploy this project in browser, run
 - Requires a strong and stable internet connection
 - It might show an alert: Error in recommendation (after clicking the search button) when you run the project for the 1st time (after you run python test1.py). You just need to hard refresh it (ctl + F5) and it will work smoothly.
 - The kaggle dataset only has movies till the year 2017 thus as long as you enter a mobie name that released before 2017 you will get all details and recommendations since my recommendation algorithm uses the movies in the dataset (after I have done pre-processing) to calculate similarity
-- I have created the recommendation system based on content based filtering.
+- I have created the recommendation system based on **content based filtering.**
+- **The top10, top rated and popular movies are arranged according to the values in the TMDB2.csv dataset and not the tmdv site data.**
 
 ## To Get API KEY
 Create an account in https://www.themoviedb.org/, click on the API link in your account settings and fill all  details to apply for API key. Fill website URL as "NA" if you don't have one. You will see the API key to copy once your request is approved. <br>
@@ -42,7 +43,7 @@ Replace your API key on:<br>
 
 | Parameter | Type     | Description                |
 | :-------- | :------- | :------------------------- |
-| `my_api_key` | `string` | **Required**. Your API key |
+| `my_api_key` | `string` | **Replace**. 'Your_Keys' with your API key |
 
 
 
@@ -95,6 +96,8 @@ All pre-processing to obtain final TMDB2.csv file done in the colab files(.pynb)
 ## TOP10 (Top10.html) 
 
 - List of top 10 movies of all genres sorted according to decreasing popularity. Click on any of the listed movies, you'll get the details of the movie as well as recommendations. File uses the `rec.js` file
+ - **The top10, top rated and popular movies are arranged according to the values in the TMDB2.csv dataset and not the tmdv site data.**
+
 
 ![image](https://user-images.githubusercontent.com/70155541/170509604-f244e9c7-e490-407c-b024-eb7901ce4150.png)
 
@@ -111,6 +114,8 @@ All pre-processing to obtain final TMDB2.csv file done in the colab files(.pynb)
 
 - List of most popular movies sorted according to genre. Click on any of the listed movies, you'll get the details of the movie as well as recommendations. File uses the `rec.js` file for recommendation<br>
 Listed according to the output csv files obtained from the colab files eg) Crime.csv , Romance.csv etc.
+- **The top10, top rated and popular movies are arranged according to the values in the TMDB2.csv dataset and not the tmdv site data.**
+
 
 ![image](https://user-images.githubusercontent.com/70155541/170510400-5ec44bbb-cbd5-449b-82a4-400957eec408.png)
 
@@ -131,4 +136,9 @@ Listed according to the output csv files obtained from the colab files eg) Crime
 - The ML part was the easy part for me. What I didn’t know was how to display the results of the algorithm or build a UI around it. So, I searched up different ways to display the colab file results in a website. One way was through the streamlit API, but I wasn’t able to install it in my system properly and was getting a lot of errors thus I had to scrap the idea and once again start the search. 
 - There were 2 backend frameworks that worked on python i.e., Flask and Django. Both were new to me, but I chose to try and work with flask. I watched a few tutorial videos and got to know the workings of flask.
 - Since I already knew web development the rest of the parts were simpler. Still, I had to find out how to how to get posters, movie and cast details through the TMDB website and display the same in my website which was a tedious task.
+
+## Future Work
+- I could sort the movies in dataset alphabetically and apply binary search for faster search.
+- Display ratings and release year along with the recommended titles and poster of movies.
+- Add the latest movies in my dataset
 
