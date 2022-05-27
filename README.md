@@ -64,6 +64,11 @@ https://www.cssscript.com/fast-autocomplete-typeahead/
 ## Pre-processing using Machine Learning <br>
 All pre-processing to obtain final TMDB2.csv file done in the colab files(.pynb)
 
+## Data Flow Diagram
+
+![image](https://user-images.githubusercontent.com/70155541/170766182-eeb8a514-894e-4679-a6c3-6df024538b6c.png)
+
+
 ## Workflow:
 
 ## **Home page(home.html)**
@@ -141,4 +146,6 @@ Listed according to the output csv files obtained from the colab files eg) Crime
 - I could sort the movies in dataset alphabetically and apply binary search for faster search.
 - Display ratings and release year along with the recommended titles and poster of movies.
 - Add the latest movies in my dataset
+- Use NLP and add text to speech recognitions or voice input outputs
+- 
 
