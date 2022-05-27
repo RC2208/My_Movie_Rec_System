@@ -1,7 +1,7 @@
 
       function click2(x)
       {
-      var my_api_key = 'b62a7baf05a94e7181a46dbfb32e86ef';
+      var my_api_key = 'Your_Keys';
 
       var title = x;
       console.log(title);
@@ -18,7 +18,7 @@
    
   // will be invoked when clicking on the recommended movies
   function recommendcard(e){
-    var my_api_key = 'b62a7baf05a94e7181a46dbfb32e86ef';
+    var my_api_key = 'Your_Keys';
     var title = e.getAttribute('title'); 
     load_details(my_api_key,title);
   }
